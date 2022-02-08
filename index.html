@@ -8,28 +8,105 @@
     <title>测试页面</title>
   </head>
   <body>
+    <div>
+      <a href="#article">列表</a>
+    </div>
     <h1>Apple 酷毙了！</h1>
     <img class="fit-picture"
-    src="images/Apple_logo.svg" alt="apple 标志：apple" width="240">
+    src="images/Apple_logo.svg" alt="apple 标志：apple" title="apple logo" width="240">
 
     <p>这里是一个<strong>最重要的</strong>全球社区，<br/>这里<em>没有</em>聚集着来自五湖四海的</p>
 
     <!--测试一些标签的使用-->
 
+    <table>
+      <caption>测试表格</caption>
+      <tr>
+        <th>表头 1</th>
+        <th>表头 2</th>
+        <th>表头 3</th>
+      </tr>
+      <tr>
+        <td rowspan="2">单元格</td>
+        <td>单元格 2</td>
+        <td>单元格 3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="2">表脚 1</td>
+          <td>表脚 2</td>
+          <td>表脚 3</td>
+        </tr>
+      </tfoot>
+      </table>
+  
+
     <p>2<sup>2</sup>+3<sup>3</sup>=31</p>
     <p>H<sub>2</sub>SO<sub>4</sub>我们一般叫它硫酸</p>
 
+    <p>&yen;8</p>
+
+    <div id="article">
+      <h3>列表</h3>
     <ul>
       <li>技术人员</li>
       <li>思考者</li>
       <li>建造者</li>
     </ul>
+    </div>
+
+
+    <h1>各科小知识</h1>
+    <h2>语文</h2>
+    <p>
+      三国演义是中国古典名著。
+    </p>
+    <hr/>
+
+    <ol type=a>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ol>
+
 
     <p>我们致力于让 Internet 保持活力，保持畅通，人人皆可贡献，人人皆可创造。我们坚信：开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。</p>
 
-    <p>为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅 <a href="https://www.apple.com.cn">apple 宣言</a>。</p>
+    <p>为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅 <a href="https://www.apple.com.cn" target="_blank">apple 宣言</a>。</p>
 
-    <button>切换用户</button>
+    <button>切换用户</button><br/><br/><br/>
+    <form method="post">
+      <div>
+        姓名:<input type="text" value="content"/><br/><br/><br/>
+        密码:<input type="password" size:"20" maxlength="13"/><br/><br/><br/>
+        性别:<input type="radio" name="gender" value="male" checked/>男
+            <input type="radio" name="gender" value="female"/>女
+            <br/><br/><br/>
+        你喜欢的水果：<br/><br/>
+        <input type="checkbox" name="fruit" value="苹果" checked/>apple<br/>
+        <input type="checkbox" name="fruit" value="橘子"/>orange<br/>
+        <input type="checkbox" name="fruit" value="香蕉"/>banana<br/>
+        <input type="checkbox" name="fruit" value="草莓"/>strawberry<br/>
+        <input type="button" name="button" value="i love HTML"
+      </div>
+      <br/><br/><br/>
+      <div>
+        <textarea>content</textarea>
+      </div>
+      <div>
+        <select size="4">
+          <option>content1</option>
+          <option>content2</option>
+          <option>content3</option>
+        </select>
+      </div>
+    </form>
+    <iframe src="http://www.sspai.com" width="500" depth="500"></iframe>
 
     <script src="scripts/main.js" defer></script>
   </body>
