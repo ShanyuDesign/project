@@ -10,7 +10,7 @@ html {
   }
   
   p, li {
-    font-size: 16px;
+    font-size: 22px;
     /* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
     line-height: 2;
     letter-spacing: 1px;
@@ -19,7 +19,8 @@ html {
     background-color: #00539F;
   }
   body {
-    width: 600px;
+    font-size: 22px;
+    width: 900px;
     margin: 0 auto;
     background-color: #FF9500;
     padding: 0 20px 20px 20px;
@@ -36,4 +37,22 @@ html {
     display: block;
     margin: 0 auto;
   }
+
+  #p1 {
+    text-indent: 44px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
   
+  #p2 {
+    border: 10px dashed #fff900;
+    border-bottom: 15px solid #f00;
+    text-indent: 44px;
+    text-transform: uppercase;
+  }
+
+  ol {
+    list-style-type: none;
+  }
